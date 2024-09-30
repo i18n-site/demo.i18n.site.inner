@@ -1,0 +1,9 @@
+host:
+seo: false
+out:
+  - fs
+v: //unpkg.com/i18n.site
+x: 18x
+importmap:
+  i/: //unpkg.com/@i18n.site/
+

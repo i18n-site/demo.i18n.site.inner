@@ -1,3 +1,13 @@
+---
+
+brief: |
+  Our product is designed to break language barriers and promote global communication. With a focus on translating markdown documents into multiple languages, we aim to make content accessible to everyone, regardless of their native language. Whether it’s literature, academic papers, or social media posts, our tool helps people from different cultures connect and understand each other more easily.
+  Let’s bridge the language gap and foster a truly global conversation.
+
+author: marlowe
+
+---
+
 # Our Product is Online !
 
 ## The Tower of Babel Revisited

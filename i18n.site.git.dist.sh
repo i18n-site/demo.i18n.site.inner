@@ -16,7 +16,7 @@ rm -rf $mdcp
 cp -R $DIR $mdcp
 cd $mdcp
 rm -rf .git \
-  .i18n/data/ zh \
+  .i18n/data/ zh ru ja \
   en/demo1/_ \
   en/demo2/_ \
   en/_ \

@@ -2,8 +2,29 @@ host: 127.0.0.1:7776
 seo: false
 out:
   - fs
-v: //127.0.0.1:7776/
-#v: //unpkg.com/i18md
-importmap:
-  i/: //unpkg.com/@i18n.site/
 
+pkg:
+  i: i18n.site
+  md: i18md
+
+cdn:
+  v:
+    # - v.i18n.site
+    # - v.ok0.pw
+    # - v.3ti.site
+
+  jsd:
+    # - registry.npmmirror.com
+    # - jsd.onmicrosoft.cn
+    # - cdn.jsdelivr.net
+    # - cdn.jsdmirror.cn
+    # - unpkg.com
+    # - fastly.jsdelivr.net
+    # - quantil.jsdelivr.net
+
+
+# v: //127.0.0.1:7776/
+# #v: //unpkg.com/i18md
+# importmap:
+#   i/: //unpkg.com/@i18n.site/
+#

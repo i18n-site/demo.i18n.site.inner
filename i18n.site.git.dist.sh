@@ -31,8 +31,8 @@ rm -rf .git \
   i18n.site.git.dist.sh
 
 cd .i18n/htm
-sed -i 's/"i18n.site"/"your_npm_package"/g' ol.package.json
-sed -i 's/i: i18n.site/i: your_npm_package/g' ol.yml
+sed -i 's/"i18n.site"/"YOUR_NPM_PACKAGE"/g' ol.package.json
+sed -i 's/i: i18n.site/i: YOUR_NPM_PACKAGE/g' ol.yml
 cd ../..
 git init
 cp -f $DIR/git.config .git/config

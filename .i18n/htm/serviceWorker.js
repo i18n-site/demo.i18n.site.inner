@@ -6,14 +6,14 @@ const NO_REWRTE = new Set(
 		),
 	),
 	https = "https:",
-	CDN = "cdn",
+	CDN_JSD = "jsd",
 	SLASH = "-",
 	H = "H",
 	MAXAGE = 9e8,
 	Int = Number.parseInt,
 	Now = () => Int(new Date() / 1e3),
 	logerr = (...args) => console.error(...args),
-	cdnStore = (mode) => DB.transaction([CDN], mode).objectStore(CDN),
+	cdnStore = (mode) => DB.transaction([CDN_JSD], mode).objectStore(CDN_JSD),
 	split = (i) => i.split(">"),
 	JSD = split("{cdn.jsd}"),
 	JSD_HOST_PREFIX = new Map(
@@ -34,11 +34,11 @@ const NO_REWRTE = new Set(
 		;[CACHE, DB] = await Promise.all([
 			caches.open(1),
 			new Promise((resolve, reject) =>
-				Object.assign(indexedDB.open(HOST, 1), {
+				Object.assign(indexedDB.open(H, 1), {
 					onupgradeneeded: (event) => {
 						const db = event.target.result
-						if (!db.objectStoreNames.contains(CDN)) {
-							db.createObjectStore(CDN, {
+						if (!db.objectStoreNames.contains(CDN_JSD)) {
+							db.createObjectStore(CDN_JSD, {
 								keyPath: H,
 							}).createIndex(H, H, { unique: true })
 						}
